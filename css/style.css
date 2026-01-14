@@ -29,12 +29,61 @@
     background-color: rgb(248, 248, 248);
 }
 
+.title-frame p {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
 .selector {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     box-shadow: 2px 2px 15px 2px rgb(189, 189, 189);
     border-radius: 25px;
     background-color: white;
     height: 5dvh;
-    width: 60dvw;
+    width: 45dvw;
+    gap: 5px;
+}
+
+.options {
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: auto;
+    height: 100%;
+    padding: 2px;
+    background: none;
+    border: none;
+    padding: 0px 8px 0px 8px;
+}
+
+.options:hover {
+    transform: scale(0.98);
+    box-shadow: 2px 2px 15px 2px rgb(189, 189, 189);
+    border-radius: 5px;
+    transition: all 0.5s;
+    background-color:  rgba(229, 229, 229, 0.534);
+}
+
+.options:active {
+    transform: scale(0.98);
+    box-shadow: 2px 2px 15px 2px rgb(189, 189, 189);
+    border-radius: 5px;
+    transition: all 0.5s;
+    background-color:  rgba(150, 150, 150, 0.534);
+}
+
+.options.selected {
+    transform: scale(0.98);
+    box-shadow: 2px 2px 15px 2px rgb(189, 189, 189);
+    border-radius: 5px;
+    transition: all 0.5s;
+    background-color:  rgba(150, 150, 150, 0.534);
+    color: white;
+    border-bottom: 3px solid black;
 }
 
 .it-frame {
